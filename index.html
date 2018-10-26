@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+	<head>
+		<title>Startpage</title>
+		<link type="image/png" rel="icon" href="img/favicon.png">
+		<link type="text/plain" rel="author" href="humans.txt">
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="referrer" content="no-referrer">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="Search with DuckDuckGo (default), !s Start Page, !x searX.me, !g Google or !w Wikipedia">
+
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bg.js"></script>
+	</head>
+
+	<body>
+		<noscript>
+			<div class="nojsmodal">
+				<a class="title">Oh no</a>
+				<br />
+				<a class="content">JavaScript appears to be disabled. This page relies on it to submit your search queries and display contents.</a>
+			</div>
+		</noscript>
+
+		<div class="container">
+			<div class="help-container">
+				Search with <span id="text"></span><div class="caret" id="help">|</div>
+			</div>
+			<br />
+			<input type="text" id="searchBox" class="search-input" autocomplete="off" autofocus></input>
+		</div>
+
+		<!--
+		<div class="dock">
+			<div class="content">
+				<img src="img/dock-1.png" width="32px">
+				<img src="img/dock-2.png" width="32px">
+				<img src="img/dock-3.png" width="32px">
+			</div>
+		</div>
+		-->
+
+		<script src="js/search.js"></script>
+	</body>
+
+</html>

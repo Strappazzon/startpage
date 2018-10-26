@@ -1,0 +1,189 @@
+/*! Open Sans Font
+ * Apache v2 License: https://www.apache.org/licenses/LICENSE-2.0.html
+*/
+@font-face {
+	font-family: 'Open Sans Light';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'),
+		url('../fonts/open-sans-v15-latin-300.woff2') format('woff2'),
+		url('../fonts/open-sans-v15-latin-300.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+		url('../fonts/open-sans-v15-latin-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Open Sans SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+		url('../fonts/open-sans-v15-latin-600.woff2') format('woff2'),
+		url('../fonts/open-sans-v15-latin-600.woff') format('woff');
+}
+
+html {
+	overflow: hidden; /* Hide IE11 horizontal scrolling bar */
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	font-family: "Open Sans Regular";
+	color: #FFF;
+}
+
+/*! Text selection color
+ * https://css-tricks.com/snippets/css/change-text-selection-color/
+*/
+::-moz-selection {
+	background-color: #6578A9;
+	color: #FFF;
+}
+
+::selection {
+	background-color: #6578A9;
+	color: #FFF;
+}
+
+.help-container {
+	position: absolute;
+	display: block;
+	text-align: center;
+	width: 100%;
+	bottom: 2em;
+	font-family: "Open Sans SemiBold";
+	font-size: 3em;
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.caret {
+	display: inline-block;
+	position: relative;
+	top: -0.10em;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.search-input {
+	border: 2px solid #343D55;
+	border-radius: 30px;
+	padding: 15px;
+	width: 800px;
+	font-family: "Open Sans Light";
+	font-size: 28px;
+	color: #FFF;
+	caret-color: #6578A9;
+	background: rgba(52, 61, 85, .5);
+}
+
+/* Responsive content */
+@media (max-width: 375px) {
+	.help-container {
+		bottom: 5em;
+		font-size: 1em;
+	}
+
+	.search-input {
+		width: 150px;
+	}
+}
+
+@media (min-width: 360px) {
+	.help-container {
+		bottom: 4.5em;
+		font-size: 1.3em;
+	}
+
+	.search-input {
+		width: 250px;
+	}
+}
+
+@media (min-width: 768px) {
+	.help-container {
+		bottom: 3.5em;
+		font-size: 2em;
+	}
+
+	.search-input {
+		width: 500px;
+	}	
+}
+
+@media (min-width: 1024px) {
+	.help-container {
+		bottom: 2em;
+		font-size: 3em;
+	}
+
+	.search-input {
+		width: 800px;
+	}	
+}
+
+/* Display an error when JS appears to be disabled */
+.nojsmodal {
+	position: relative;
+	width: 80%;
+	max-width: 600px;
+	border-radius: 10px;
+	margin: 50px auto;
+	padding: 10px;
+	background: crimson;
+	border: 2px solid #FFF;
+}
+
+.nojsmodal .title {
+	font-family: "Open Sans SemiBold";
+	font-size: 1.5em;
+}
+
+.nojsmodal .content {
+	font-family: "Open Sans Light";
+}
+
+/*! Bottom center align
+ * https://stackoverflow.com/a/9383194
+
+.dock {
+	position: fixed;
+	bottom: 25px;
+	right: 25%;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: 42px;
+	border: 2px solid #343D55;
+	border-radius: 10px;
+	background-color: rgba(52, 61, 85, .8);
+}
+
+.dock .content {
+	display: inline;
+	position: absolute !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-top: 4px;
+}
+
+*/
