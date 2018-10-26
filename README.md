@@ -2,7 +2,7 @@
 A startpage inspired by [this post on r/startpages](https://old.reddit.com/r/startpages/comments/9pwnwh/creation_my_first_try_at_a_personalized_start_page/). I wanted the startpage to be minimal so I did not include a dock (I use the Bookmarks toolbar anyway) and I replaced the time and date with a list of supported bangs (the date and time are on the taskbar so there's no need to add them here).
 
 ## Preview
-<img src="https://puu.sh/BQMWB.gif">
+<img src="https://puu.sh/BRp1j.jpg">
 
 ## Usage
 Go to https://strappazzon.github.io/startpage/
