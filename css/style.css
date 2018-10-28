@@ -83,6 +83,10 @@ html {
 	transform: translate(-50%, -50%);
 }
 
+input:focus {
+	outline: none;
+}
+
 .search-input {
 	border: 2px solid #343D55;
 	border-radius: 30px;
