@@ -11,15 +11,6 @@
 }
 
 @font-face {
-	font-family: 'Open Sans Regular';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Open Sans Regular'), local('OpenSans-Regular'),
-		url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
-		url('../fonts/open-sans-v15-latin-regular.woff') format('woff');
-}
-
-@font-face {
 	font-family: 'Open Sans SemiBold';
 	font-style: normal;
 	font-weight: 600;
@@ -34,12 +25,15 @@ html {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	font-family: "Open Sans Regular";
+	background-size: cover;
 	color: #FFF;
+}
+
+body {
+	margin: 0 auto;
 }
 
 /*! Text selection color
@@ -69,7 +63,7 @@ html {
 .caret {
 	display: inline-block;
 	position: relative;
-	top: -0.10em;
+	top: -0.05em;
 }
 
 .hidden {
@@ -80,15 +74,20 @@ html {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
 input:focus {
+	-webkit-box-shadow: 0 0 10px 0 rgba(101, 120, 169, 0.5);
+	box-shadow: 0 0 10px 0 rgba(101, 120, 169, 0.5);
 	outline: none;
 }
 
 .search-input {
 	border: 2px solid #343D55;
+	-webkit-border-radius: 30px;
 	border-radius: 30px;
 	padding: 15px;
 	width: 800px;
@@ -96,7 +95,12 @@ input:focus {
 	font-size: 28px;
 	color: #FFF;
 	caret-color: #6578A9;
-	background: rgba(52, 61, 85, .5);
+	background: rgba(52, 61, 85, 0.5);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 /* Responsive content */
@@ -144,11 +148,12 @@ input:focus {
 	}	
 }
 
-/* Display an error when JS appears to be disabled */
+/* Display an error when JS is disabled */
 .nojsmodal {
 	position: relative;
 	width: 80%;
 	max-width: 600px;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	margin: 50px auto;
 	padding: 10px;
@@ -177,6 +182,7 @@ input:focus {
 	width: 300px;
 	height: 42px;
 	border: 2px solid #343D55;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	background-color: rgba(52, 61, 85, .8);
 }
@@ -186,8 +192,14 @@ input:focus {
 	position: absolute !important;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	padding-top: 4px;
 }
 
+.dock .content a > img:hover {
+	-webkit-box-shadow: 0 0 5px 0 rgba(101, 120, 169, 0.7);
+	box-shadow: 0 0 5px 0 rgba(101, 120, 169, 0.7);
+}
 */

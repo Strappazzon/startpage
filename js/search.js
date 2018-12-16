@@ -18,22 +18,12 @@ function search(query){
 	switch(query.substr(0, 2)){
 		case "!s":
 			query = query.substr(3);
-			window.location = "https://new.startpage.com/do/search?query=" + query.replaceChars(" ", "+");
+			window.location = "https://www.startpage.com/do/search?query=" + query.replaceChars(" ", "+");
 			break;
 
 		case "!x":
 			query = query.substr(3);
 			window.location = "https://searx.me/?q=" + query.replaceChars(" ", "+");
-			break;
-
-		case "!g":
-			query = query.substr(3);
-			window.location = "https://www.google.com/search?q=" + query.replaceChars(" ", "+");
-			break;
-
-		case "!w":
-			query = query.substr(3);
-			window.location = "https://wikipedia.org/wiki/Special:Search/" + query.replaceChars(" ", "+");
 			break;
 
 		case "":
@@ -45,7 +35,6 @@ function search(query){
 }
 
 window.onload = function(){
-    
 	searchinput = document.getElementById("searchBox");
 	if(!!searchinput){
 		searchinput.addEventListener("keypress", function(a){
@@ -63,7 +52,6 @@ window.onload = function(){
 /*! Terminal Text Effect
  * https://codepen.io/anon/pen/QZzNve
  */
-
 searchText(
 	['DuckDuckGo', '!s Start Page', '!x searX.me', '!g Google', '!w Wikipedia'],
 	'text',

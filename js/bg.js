@@ -5,4 +5,4 @@ var images = [
 	'bg3.jpg'
 ];
 
-$('html').css({'background-image': 'linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+document.querySelector("html").style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/" + images[Math.floor(Math.random() * images.length)] + ")";
