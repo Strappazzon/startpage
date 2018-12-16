@@ -55,7 +55,7 @@ window.onload = function(){
 searchText(
 	['DuckDuckGo', '!s Start Page', '!x searX.me', '!g Google', '!w Wikipedia'],
 	'text',
-	['crimson', 'dodgerblue', 'green', 'gold', 'silver']
+	['lightcoral', 'dodgerblue', 'yellowgreen', 'gold', 'gainsboro']
 );
 
 function searchText(words, id, colors) {
