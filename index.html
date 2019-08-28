@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="referrer" content="no-referrer">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<meta name="description" content="Search with DuckDuckGo (default), !s Start Page, !x searX.me, !g Google or !w Wikipedia">
+		<meta name="description" content="Search with DuckDuckGo">
 
 		<link type="text/plain" rel="author" href="humans.txt">	
 
@@ -30,7 +30,7 @@
 			<div class="nojsmodal">
 				<a class="title">Oh no</a>
 				<br>
-				<a class="content">JavaScript appears to be disabled. This page relies on it to submit your search queries and display contents.</a>
+				<a class="content">JavaScript appears to be disabled. This page relies on it to display some of its content.</a>
 			</div>
 		</noscript>
 
@@ -39,7 +39,7 @@
 				Search with <span id="text"></span><div class="caret" id="help">|</div>
 			</div>
 			<br>
-			<input type="text" id="searchBox" class="search-input" autocomplete="off" autofocus></input>
+			<form method="POST" action="https://duckduckgo.com/" role="search"><input type="search" name="q" class="search-input" id="q" autocomplete="off" value="" autofocus></form>
 		</div>
 
 		<!--
@@ -52,6 +52,6 @@
 		</div>
 		-->
 
-		<script src="js/search.js"></script>
+		<script src="js/text.js"></script>
 	</body>
 </html>

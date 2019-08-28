@@ -1,61 +1,10 @@
-// via: https://github.com/viperML/viperML.github.io/blob/master/search.js
-
-String.prototype.replaceChars = function(character, replacement){
-	var str = this;
-	var a;
-	var b;
-	for(var i=0; i < str.length; i++){
-		if(str.charAt(i) == character){
-			a = str.substr(0, i) + replacement;
-			b = str.substr(i + 1);
-			str = a + b;
-		}
-	}
-	return str;
-}
-
-function search(query){
-	switch(query.substr(0, 2)){
-		case "!s":
-			query = query.substr(3);
-			window.location = "https://www.startpage.com/do/search?query=" + query.replaceChars(" ", "+");
-			break;
-
-		case "!x":
-			query = query.substr(3);
-			window.location = "https://searx.me/?q=" + query.replaceChars(" ", "+");
-			break;
-
-		case "":
-			break;
-
-		default:
-			window.location = "https://duckduckgo.com/?q=" + query.replaceChars(" ", "+");
-	}
-}
-
-window.onload = function(){
-	searchinput = document.getElementById("searchBox");
-	if(!!searchinput){
-		searchinput.addEventListener("keypress", function(a){
-			var key = a.keyCode;
-			if(key == 13){
-				var query = this.value;
-				search(query);
-			}
-		});
-	}
-
-	var search_sqr = document.getElementById("search_sqr");
-}
-
 /*! Terminal Text Effect
  * https://codepen.io/anon/pen/QZzNve
- */
+*/
 searchText(
-	['DuckDuckGo', '!s Start Page', '!x searX.me', '!g Google', '!w Wikipedia'],
+	['DuckDuckGo', '!sp Startpage', '!g Google', '!w Wikipedia', '!bangs ...and more'],
 	'text',
-	['lightcoral', 'dodgerblue', 'yellowgreen', 'gold', 'gainsboro']
+	['lightcoral', 'dodgerblue', 'gold', 'gainsboro', 'orangered']
 );
 
 function searchText(words, id, colors) {
