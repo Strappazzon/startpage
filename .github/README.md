@@ -12,15 +12,14 @@ Go to <https://strappazzon.github.io/startpage/>
 
 The default search engine is [DuckDuckGo](https://duckduckgo.com/). You can also search with any supported website\search engine by typing an exclamation mark followed by its corresponding letter, a space and your search query. For example:
 
-- `!s GitHub` would search Startpage for GitHub
+- `!sp GitHub` would search Startpage for GitHub
 
 This is a list of available bangs:
 
-- !s [Startpage](https://www.startpage.com/)
-- !x [searX.me](https://searx.me/)
+- !sp [Startpage](https://www.startpage.com/)
 - !g [Google](https://www.google.com/)
 - !w [Wikipedia](https://www.wikipedia.org/)
-- ...and [9,886+ more](https://duckduckgo.com/bang)
+- ...and [12,758 more](https://duckduckgo.com/bang)
 
 ## Requirements
 
