@@ -4,7 +4,7 @@ A startpage inspired by [this post on r/startpages](https://old.reddit.com/r/sta
 
 ## Preview
 
-![Startpage](images/preview.jpg)
+![Startpage](preview.jpg)
 
 ## Usage
 
