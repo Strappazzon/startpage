@@ -4,7 +4,7 @@
 searchText(
 	['DuckDuckGo', '!sp Startpage', '!g Google', '!w Wikipedia', '!bangs ...and more'],
 	'text',
-	['lightcoral', 'dodgerblue', 'gold', 'gainsboro', 'orangered']
+	['crimson', 'dodgerblue', 'gold', 'gainsboro', 'orangered']
 );
 
 function searchText(words, id, colors) {
