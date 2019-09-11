@@ -20,7 +20,7 @@
 }
 
 html {
-	overflow: hidden; /* Hide IE11 horizontal scrolling bar */
+	overflow: hidden;
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -32,22 +32,14 @@ html {
 	color: #FFF;
 }
 
-body {
-	margin: 0 auto;
-}
+body { margin: 0 auto; }
 
 /*! Text selection color
  * https://css-tricks.com/snippets/css/change-text-selection-color/
 */
-::-moz-selection {
-	background-color: #6578A9;
-	color: #FFF;
-}
+::-moz-selection { background-color: #6578A9; color: #FFF; }
 
-::selection {
-	background-color: #6578A9;
-	color: #FFF;
-}
+::selection { background-color: #6578A9; color: #FFF; }
 
 .help-container {
 	position: absolute;
@@ -66,9 +58,7 @@ body {
 	top: -0.05em;
 }
 
-.hidden {
-	opacity: 0;
-}
+.hidden { opacity: 0; }
 
 .container {
 	position: absolute;
@@ -103,7 +93,6 @@ input:focus {
 	transition: all 0.3s ease-in-out;
 }
 
-/* Responsive content */
 @media (max-width: 375px) {
 	.help-container {
 		bottom: 5em;
@@ -161,14 +150,9 @@ input:focus {
 	border: 2px solid #FFF;
 }
 
-.nojsmodal .title {
-	font-family: "Open Sans SemiBold";
-	font-size: 1.5em;
-}
+.nojsmodal .title { font-family: "Open Sans SemiBold"; font-size: 1.5em; }
 
-.nojsmodal .content {
-	font-family: "Open Sans Light";
-}
+.nojsmodal .content { font-family: "Open Sans Light"; }
 
 /*! Bottom center align
  * https://stackoverflow.com/a/9383194
