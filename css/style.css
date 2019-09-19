@@ -1,6 +1,3 @@
-/*! Open Sans Font
- * Apache v2 License: https://www.apache.org/licenses/LICENSE-2.0.html
-*/
 @font-face {
 	font-family: 'Open Sans Light';
 	font-style: normal;
@@ -19,38 +16,63 @@
 		url('../fonts/open-sans-v15-latin-600.woff') format('woff');
 }
 
+* { margin: 0 auto; }
+
+html, body { height: 1vh; }
+
 html {
-	overflow: hidden;
-	background-color: #000;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
-	color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 
-body { margin: 0 auto; }
-
-/*! Text selection color
- * https://css-tricks.com/snippets/css/change-text-selection-color/
-*/
-::-moz-selection { background-color: #6578A9; color: #FFF; }
-
-::selection { background-color: #6578A9; color: #FFF; }
-
-.help-container {
-	position: absolute;
-	display: block;
-	text-align: center;
-	width: 100%;
-	bottom: 2em;
+body {
 	font-family: "Open Sans SemiBold";
-	font-size: 3em;
+	font-size: 18px;
 	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	margin-bottom: 0;
 }
+
+::selection { background-color: #6578a9; color: #fff; }
+
+.container {
+	width: 50%;
+	height: 100px;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+	body { font-size: 18px; }
+	.container { max-width: 540px; }
+}
+
+@media (min-width: 768px) {
+	body { font-size: 24px; }
+	.container { max-width: 720px; }
+}
+
+@media (min-width: 992px) {
+	body { font-size: 32px; }
+	.container { max-width: 960px; }
+}
+
+@media (min-width: 1200px) {
+	body { font-size: 38px; }
+	.container { max-width: 1140px; }
+}
+
+@media (min-width: 1600px) {
+	body { font-size: 42px; }
+	.container { max-width: 1350px; }
+}
+
+.search-with { margin-bottom: 30px; }
 
 .caret {
 	display: inline-block;
@@ -60,13 +82,25 @@ body { margin: 0 auto; }
 
 .hidden { opacity: 0; }
 
-.container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+.search-input {
+	font-family: 'Open Sans Light';
+	font-size: 24px;
+	color: #fff;
+	caret-color: #6578a9;
+	background: rgba(52, 61, 85, 0.5);
+	padding: 10px;
+	border: 2px solid #343d55;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	width: 100%;
 }
 
 input:focus {
@@ -74,116 +108,3 @@ input:focus {
 	box-shadow: 0 0 10px 0 rgba(101, 120, 169, 0.5);
 	outline: none;
 }
-
-.search-input {
-	border: 2px solid #343D55;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
-	padding: 15px;
-	width: 800px;
-	font-family: "Open Sans Light";
-	font-size: 28px;
-	color: #FFF;
-	caret-color: #6578A9;
-	background: rgba(52, 61, 85, 0.5);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 375px) {
-	.help-container {
-		bottom: 5em;
-		font-size: 1em;
-	}
-
-	.search-input {
-		width: 150px;
-	}
-}
-
-@media (min-width: 360px) {
-	.help-container {
-		bottom: 4.5em;
-		font-size: 1.3em;
-	}
-
-	.search-input {
-		width: 250px;
-	}
-}
-
-@media (min-width: 768px) {
-	.help-container {
-		bottom: 3.5em;
-		font-size: 2em;
-	}
-
-	.search-input {
-		width: 500px;
-	}	
-}
-
-@media (min-width: 1024px) {
-	.help-container {
-		bottom: 2em;
-		font-size: 3em;
-	}
-
-	.search-input {
-		width: 800px;
-	}	
-}
-
-/* Display an error when JS is disabled */
-.nojsmodal {
-	position: relative;
-	width: 80%;
-	max-width: 600px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	margin: 50px auto;
-	padding: 10px;
-	background: crimson;
-	border: 2px solid #FFF;
-}
-
-.nojsmodal .title { font-family: "Open Sans SemiBold"; font-size: 1.5em; }
-
-.nojsmodal .content { font-family: "Open Sans Light"; }
-
-/*! Bottom center align
- * https://stackoverflow.com/a/9383194
-
-.dock {
-	position: fixed;
-	bottom: 25px;
-	right: 25%;
-	left: 50%;
-	margin-left: -150px;
-	width: 300px;
-	height: 42px;
-	border: 2px solid #343D55;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	background-color: rgba(52, 61, 85, .8);
-}
-
-.dock .content {
-	display: inline;
-	position: absolute !important;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	padding-top: 4px;
-}
-
-.dock .content a > img:hover {
-	-webkit-box-shadow: 0 0 5px 0 rgba(101, 120, 169, 0.7);
-	box-shadow: 0 0 5px 0 rgba(101, 120, 169, 0.7);
-}
-*/

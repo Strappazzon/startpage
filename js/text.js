@@ -2,7 +2,7 @@
  * https://codepen.io/anon/pen/QZzNve
 */
 searchText(
-	['DuckDuckGo', '!sp Startpage', '!g Google', '!w Wikipedia', '!bangs ...and more'],
+	['DuckDuckGo', '!sp Startpage', '!g Google', '!w Wikipedia', '!bangs ...more'],
 	'text',
 	['crimson', 'dodgerblue', 'gold', 'gainsboro', 'orangered']
 );
@@ -10,7 +10,7 @@ searchText(
 function searchText(words, id, colors) {
 	if (colors === undefined) colors = ['#fff'];
 	var visible = true;
-	var con = document.getElementById('help');
+	var con = document.getElementById('caret');
 	var letterCount = 1;
 	var x = 1;
 	var waiting = false;
