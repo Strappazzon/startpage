@@ -19,7 +19,7 @@ This is a list of available bangs:
 - !sp [Startpage](https://www.startpage.com/)
 - !g [Google](https://www.google.com/)
 - !w [Wikipedia](https://www.wikipedia.org/)
-- ...and [13,094 more](https://duckduckgo.com/bang)
+- ...and [13,099 more](https://duckduckgo.com/bang)
 
 ## Credits
 
