@@ -31,3 +31,7 @@ The default search engine is [DuckDuckGo](https://duckduckgo.com/). You can also
 ### Font
 
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+
+### Favicon
+
+- [Icons8](https://icons8.com/icons/set/www)
