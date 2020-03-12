@@ -18,8 +18,11 @@
 	<link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
 	<link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#6578a9">
 	<link rel="stylesheet" href="assets/css/style.css?v=1">
-	<script defer src="assets/js/bg.js?v=1"></script>
 	<script defer src="assets/js/text.js?v=1"></script>
+	<script type="text/javascript">
+		let bgs = [ 'bg1.jpg', 'bg2.jpg', 'bg3.jpg', 'bg4.jpg', 'bg5.jpg' ];
+		document.querySelector('html').style.backgroundImage = "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/img/" + bgs[Math.floor(Math.random() * bgs.length)] + ")";
+	</script>
 </head>
 <body>
 	<div class="container">
