@@ -3,7 +3,7 @@
 	font-style: normal;
 	font-weight: 300;
 	src: local('Open Sans Light'), local('OpenSans-Light'),
-		url('../webfonts/open-sans-v15-latin-300.woff2') format('woff2');
+		url('webfonts/open-sans-v15-latin-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 	font-style: normal;
 	font-weight: 600;
 	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-		url('../webfonts/open-sans-v15-latin-600.woff2') format('woff2');
+		url('webfonts/open-sans-v15-latin-600.woff2') format('woff2');
 }
 
 * { margin: 0 auto; }
