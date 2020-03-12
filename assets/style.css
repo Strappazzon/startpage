@@ -75,8 +75,12 @@ input:focus {
 
 @media (min-width: 320px) {
 	body { font-size: 18px; }
-	.container { width: 75%; max-width: 290px; }
+	.container { max-width: 290px; }
 	.search-input { font-size: 16px; }
+}
+
+@media (max-width: 400px) {
+	.container { width: 75%; }
 }
 
 @media (min-width: 576px) {
