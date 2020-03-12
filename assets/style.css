@@ -2,19 +2,24 @@
 	font-family: 'Open Sans Light';
 	font-style: normal;
 	font-weight: 300;
-	src: local('Open Sans Light'), local('OpenSans-Light'),
-		url('webfonts/open-sans-v15-latin-300.woff2') format('woff2');
+	font-display: swap;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url('webfonts/open-sans-v15-latin-300.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'Open Sans SemiBold';
 	font-style: normal;
 	font-weight: 600;
-	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-		url('webfonts/open-sans-v15-latin-600.woff2') format('woff2');
+	font-display: swap;
+	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('webfonts/open-sans-v15-latin-600.woff2') format('woff2');
 }
 
 * { margin: 0 auto; }
+
+::selection {
+	background-color: #6578a9;
+	color: #fff;
+}
 
 html, body { height: 1vh; }
 
@@ -26,14 +31,12 @@ html {
 }
 
 body {
-	font-family: "Open Sans SemiBold";
+	font-family: 'Open Sans SemiBold';
 	font-size: 18px;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 	color: #fff;
 	margin-bottom: 0;
 }
-
-::selection { background-color: #6578a9; color: #fff; }
 
 .container {
 	width: 50%;
@@ -60,7 +63,7 @@ body {
 	font-size: 16px;
 	color: #fff;
 	caret-color: #6578a9;
-	background: rgba(52,61,85,0.5);
+	background-color: rgba(52,61,85,0.5);
 	padding: 6px;
 	border: 2px solid #343d55;
 	border-radius: 14px;
@@ -68,27 +71,38 @@ body {
 	width: 100%;
 }
 
-input:focus { box-shadow: 0 0 10px 0 rgba(101,120,169,0.5); outline: none; }
+input:focus {
+	box-shadow: 0 0 10px 0 rgba(101,120,169,0.5);
+	outline: none;
+}
 
 @media (min-width: 576px) {
 	.container { max-width: 540px; }
 	.search-input { font-size: 18px; }
 }
+
 @media (min-width: 768px) {
 	body { font-size: 24px; }
 	.container { max-width: 720px; }
-	.search-input { font-size: 20px; padding: 10px; border-radius: 20px; }
+	.search-input { 
+		font-size: 20px;
+		padding: 10px;
+		border-radius: 20px;
+	}
 }
+
 @media (min-width: 992px) {
 	body { font-size: 32px; }
 	.container { max-width: 960px; }
 	.search-input { font-size: 20px; }
 }
+
 @media (min-width: 1200px) {
 	body { font-size: 38px; }
 	.container { max-width: 1140px; }
 	.search-input { font-size: 24px; }
 }
+
 @media (min-width: 1600px) {
 	body { font-size: 42px; }
 	.container { max-width: 1350px; }
