@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Page",
+			"type": "shell",
+			"command": "jekyll build -s \"./\" -d \"./_site/\"",
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			}
+		},
+		{
+			"label": "Serve Page",
+			"type": "shell",
+			"command": "jekyll serve -s \"./\" -d \"./_site/\"",
+			"group": "test",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			}
+		}
+	]
+}
