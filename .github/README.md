@@ -1,14 +1,14 @@
-<img src="https://strappazzon.xyz/startpage/assets/img/favicons/android-chrome-96x96.png" align="right">
+<img src="https://github.com/Strappazzon/newtab/blob/master/assets/img/favicons/android-chrome-96x96.png?raw=true" align="right">
 
 A startpage inspired by [this post on r/startpages](https://reddit.com/r/startpages/comments/9pwnwh/). I wanted the startpage to be minimal so I did not include a dock and I replaced the time and date with a list of some available bangs (the date and time are on the operating system's taskbar anyway).
 
 ## Preview
 
-![New tab page preview](./preview.jpg)
+![New tab page preview](https://github.com/Strappazzon/newtab/blob/master/.github/preview.jpg?raw=true)
 
 ## Usage
 
-Go to <https://strappazzon.xyz/startpage/>
+Go to <https://strappazzon.xyz/newtab/>
 
 The default search engine is [DuckDuckGo](https://duckduckgo.com/). You can also search with any supported website/search engine by typing an exclamation mark followed by its corresponding letter, a space and your search query. For example:
 
